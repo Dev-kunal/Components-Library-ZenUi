@@ -528,13 +528,7 @@ body {
   border-radius: 0.3em;
   box-shadow: 4px 6px 3px #292e36, -4px -3px 4px #313640;
 }
-.toast-n {
-  position: fixed;
-  bottom: 7em;
-  right: 2em;
-  border: none;
-  box-shadow: 4px 6px 3px #292e36, -4px -3px 4px #313640;
-}
+
 .toast p {
   margin: 0;
 }
