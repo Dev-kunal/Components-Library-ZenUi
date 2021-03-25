@@ -208,7 +208,7 @@ body {
 .floating-action-btn {
   height: 1.2rem;
   width: 1.2rem;
-  position: fixed;
+  position: absolute;
   bottom: 2rem;
   right: 2rem;
   margin: 1rem;
@@ -518,7 +518,7 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   bottom: 2em;
   right: 2em;
   border: 1px ridge #4d6a7c;
