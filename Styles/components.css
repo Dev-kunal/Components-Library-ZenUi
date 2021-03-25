@@ -512,6 +512,9 @@ body {
 }
 
 /* *******************Toast******************** */
+.toast-container{
+  display: relative;
+}
 .toast {
   padding: 0.8em;
   font-size: smaller;
