@@ -3,6 +3,8 @@
  
  Here is the CDN:
  
+ https://dashedui.netlify.app/Styles/components.css
  
  and Script:
  
+ https://dashedui.netlify.app/Js/components.js
