@@ -112,6 +112,18 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.082);
   box-shadow: 4px 6px 3px #292e36, -4px -3px 4px #313640;
 }
+.social-links{
+    text-align: right;
+    position: absolute;
+    top: 1rem;
+    right: 6rem;
+    padding: 0.5em 1rem;
+}
+.social-links a{
+  font-size: large;
+  color:#2bc48a ;
+}
+
 .btn-copy {
   position: fixed;
   top: 1em;

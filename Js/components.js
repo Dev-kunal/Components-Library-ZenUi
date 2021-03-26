@@ -45,8 +45,8 @@ alertbuttons.forEach((element) => {
   element.addEventListener("click", () => closeAlert(alertBox));
 });
 
-btnCopy.addEventListener("click", () => {
-  const textToCopy = btnCopy.nextElementSibling.innerText;
-  // document.execCommand()
-  console.log(textToCopy);
-});
+// btnCopy.addEventListener("click", () => {
+//   const textToCopy = btnCopy.nextElementSibling.innerText;
+//   // document.execCommand()
+//   console.log(textToCopy);
+// });
