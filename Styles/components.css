@@ -180,6 +180,7 @@ body {
   /* box-shadow: 1px 1px #4d6a7c; */
   /* transform: scale3d(1.1, 1.1, 1.1); */
   transform: translateY(2px);
+  transition: all 0.1s ease-in-out;
 }
 
 .btn-primary {
@@ -512,7 +513,7 @@ body {
 }
 
 /* *******************Toast******************** */
-.toast-container{
+.toast-container {
   position: relative;
 }
 .toast {
