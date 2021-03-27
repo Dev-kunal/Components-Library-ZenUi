@@ -174,25 +174,25 @@
                 <pre>
                   <code class="html">
                     &lt;div class=&quot;alert&quot;&gt;<br />
-                      This is an .alert &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
+                      This is an .alert &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
                     &lt;/div&gt;<br />
                     &lt;div class=&quot;alert alert-white&quot;&gt;<br />
-                      This is an .alert-white &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
+                      This is an .alert-white &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
                     &lt;/div&gt;<br />
                     &lt;div class=&quot;alert alert-primary&quot;&gt;<br />
-                      This is an .alert-primary &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
+                      This is an .alert-primary &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
                     &lt;/div&gt;<br />
                     &lt;div class=&quot;alert alert-success&quot;&gt;<br />
-                      This is an .alert-success &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
+                      This is an .alert-success &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
                     &lt;/div&gt;<br />
                     &lt;div class=&quot;alert alert-secondary&quot;&gt;<br />
-                      This is an .alert-secondary &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
+                      This is an .alert-secondary &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
                     &lt;/div&gt;<br />
                     &lt;div class=&quot;alert alert-danger&quot;&gt;<br />
-                      This is an .alert-danger &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
+                      This is an .alert-danger &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
                     &lt;/div&gt;<br />
                     &lt;div class=&quot;alert alert-warning&quot;&gt;<br />
-                      This is an .alert-warning &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
+                      This is an .alert-warning &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/n&gt;<br />
                     &lt;/div&gt;
                   </code>
                 </pre>
@@ -668,7 +668,7 @@
                       eaque ipsum ducimus.<br />
                     &lt;/p&gt;<br />
                   &lt;/div&gt;<br />
-                  &lt;span class=&quot;dismiss-badge dismiss-btn&quot;&gt;x&lt;/span&gt;<br />
+                  &lt;button class=&quot;dismiss-badge dismiss-btn&quot;&gt;x&lt;/button&gt;<br />
                 &lt;/div&gt;
                   </code>
                 </pre>
@@ -931,33 +931,42 @@
               <article class="component component-list component-center">
                 <pre>
                  <code class="html">
-                &lt;input<br />
-                  class=&quot;input&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input&quot;<br />
-                /&gt;<br />
-                &lt;h3&gt;.input-md&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input input-md&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input input-md&quot;<br />
-                /&gt;<br />
-                &lt;h3&gt;.input-lg&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input input-lg&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input input-lg&quot;<br />
-                /&gt;
+                &lt;div class=&quot;input-group&quot;&gt;<br />
+                  &lt;label class=&quot;input-label&quot; for=&quot;input-sm&quot;&gt;Email&lt;/label&gt;<br />
+                  &lt;input<br />
+                    class=&quot;input input-sm&quot;<br />
+                    type=&quot;email&quot;<br />
+                    id=&quot;input-sm&quot;<br />
+                    placeholder=&quot;Email&quot;<br />
+                    required<br />
+                  /&gt;<br />
+                &lt;/div&gt;
+                &lt;div class=&quot;input-group&quot;&gt;<br />
+                  &lt;label class=&quot;input-label&quot; for=&quot;input-md&quot;&gt;Email&lt;/label&gt;<br />
+                  &lt;input<br />
+                    class=&quot;input input-md&quot;<br />
+                    type=&quot;email&quot;<br />
+                    id=&quot;input-md&quot;<br />
+                    placeholder=&quot;Email&quot;<br />
+                    required<br />
+                  /&gt;<br />
+                &lt;/div&gt;
+                &lt;div class=&quot;input-group&quot;&gt;<br />
+                  &lt;label class=&quot;input-label&quot; for=&quot;input-lg&quot;&gt;Email&lt;/label&gt;<br />
+                  &lt;input<br />
+                    class=&quot;input input-lg&quot;<br />
+                    type=&quot;email&quot;<br />
+                    id=&quot;input-lg&quot;<br />
+                    placeholder=&quot;Email&quot;<br />
+                    required<br />
+                  /&gt;<br />
+                &lt;/div&gt;
                  </code>
                </pre>
               </article>
               <article class="component component-list component-center">
                 <h3>.line-input</h3>
                 <div class="input-group">
-                  <!-- <label class="input-label" for="line-input-sm">Name</label> -->
                   <input
                     class="input line-input input-sm"
                     type="text"
@@ -968,7 +977,6 @@
                 </div>
                 <h3>.line-input input-md</h3>
                 <div class="input-group">
-                  <!-- <label class="input-label" for="line-input-md">Name</label> -->
                   <input
                     class="input line-input input-md"
                     type="text"
@@ -981,19 +989,25 @@
               <article class="component component-list component-center">
                 <pre>
                   <code class="html">
-                &lt;input<br />
-                  class=&quot;input line-input&quot;<br />
-                  type=&quot;password&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input line-input&quot;<br />
-                /&gt;<br />
-                &lt;h3&gt;.line-input input-md&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input line-input input-md&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input line-input input-md&quot;<br />
-                /&gt;
+                  &lt;div class=&quot;input-group&quot;&gt;<br />
+                  &lt;input<br />
+                    class=&quot;input line-input input-sm&quot;<br />
+                    type=&quot;text&quot;<br />
+                    id=&quot;line-input-sm&quot;<br />
+                    placeholder=&quot;Name&quot;<br />
+                    required<br />
+                  /&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;h3&gt;.line-input input-md&lt;/h3&gt;<br />
+                  &lt;div class=&quot;input-group&quot;&gt;<br />
+                  &lt;input<br />
+                    class=&quot;input line-input input-md&quot;<br />
+                    type=&quot;text&quot;<br />
+                    id=&quot;line-input-md&quot;<br />
+                    placeholder=&quot;Name&quot;<br />
+                    required<br />
+                  /&gt;<br />
+                &lt;/div&gt;
                   </code>
                 </pre>
               </article>
@@ -1013,10 +1027,7 @@
                     required
                   />
                 </div>
-
-                <span class="validation-msg-required"
-                  >This field is required</span
-                >
+                <span class="validation-msg-required">Required</span>
                 <h3>.input-md</h3>
                 <div class="input-group">
                   <label class="input-label" for="input-valid">Password</label>
@@ -1028,7 +1039,6 @@
                     required
                   />
                 </div>
-
                 <span class="validation-msg-ok">Acccepted</span>
                 <h3>.input-lg</h3>
                 <div class="input-group">
@@ -1041,39 +1051,46 @@
                     required
                   />
                 </div>
-
                 <span class="validation-msg-good">Verified</span>
               </article>
               <article class="component component-list component-center">
                 <pre>
                   <code class="html">
-                &lt;input<br />
-                  class=&quot;input required&quot;<br />
-                  required<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input&quot;<br />
-                /&gt;<br />
-                &lt;br /&gt;<br />
-                &lt;span class=&quot;validation-msg-required&quot;&gt;This field is required&lt;/span&gt;<br />
+                &lt;div class=&quot;input-group&quot;&gt;<br />
+                &lt;label class=&quot;input-label&quot; for=&quot;input-valid&quot;&gt;Username&lt;/label&gt;<br />
+                  &lt;input<br />
+                    class=&quot;input input-sm&quot;<br />
+                    type=&quot;text&quot;<br />
+                    id=&quot;input-valid&quot;<br />
+                    placeholder=&quot;Username&quot;<br />
+                    required<br />
+                  /&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;span class=&quot;validation-msg-required&quot;&gt;Required&lt;/span&gt;<br />
                 &lt;h3&gt;.input-md&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input input-md&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input input-md&quot;<br />
-                /&gt;<br />
-                &lt;br /&gt;<br />
+                &lt;div class=&quot;input-group&quot;&gt;<br />
+                  &lt;label class=&quot;input-label&quot; for=&quot;input-valid&quot;&gt;Password&lt;/label&gt;<br />
+                  &lt;input<br />
+                    class=&quot;input input-md&quot;<br />
+                    type=&quot;password&quot;<br />
+                    id=&quot;input-valid&quot;<br />
+                    placeholder=&quot;Username&quot;<br />
+                    required<br />
+                  /&gt;<br />
+                &lt;/div&gt;<br />
                 &lt;span class=&quot;validation-msg-ok&quot;&gt;Acccepted&lt;/span&gt;<br />
                 &lt;h3&gt;.input-lg&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input input-lg&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input input-lg&quot;<br />
-                /&gt;<br />
-                &lt;br /&gt;<br />
-                &lt;span class=&quot;validation-msg-good&quot;&gt;Good&lt;/span&gt;
+                &lt;div class=&quot;input-group&quot;&gt;<br />
+                  &lt;label class=&quot;input-label&quot; for=&quot;input-lg&quot;&gt;Username&lt;/label&gt;<br />
+                  &lt;input<br />
+                    class=&quot;input input-lg&quot;<br />
+                    type=&quot;text&quot;<br />
+                    id=&quot;input-lg&quot;<br />
+                    placeholder=&quot;Username&quot;<br />
+                    required<br />
+                  /&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;span class=&quot;validation-msg-good&quot;&gt;Verified&lt;/span&gt;
                   </code>
                 </pre>
               </article>
@@ -1086,9 +1103,7 @@
                   placeholder="input line-input"
                 />
                 <br />
-                <span class="validation-msg-required"
-                  >This field is required</span
-                >
+                <span class="validation-msg-required">Required</span>
                 <h3>.line-input input-md</h3>
                 <input
                   class="input line-input input-md"
@@ -1097,21 +1112,19 @@
                   placeholder="input line-input input-md"
                 />
                 <br />
-                <span class="validation-msg-required"
-                  >This field is required</span
-                >
+                <span class="validation-msg-required">Required</span>
               </article>
               <article class="component component-list component-center">
                 <pre>
                   <code class="html">
-                &lt;input<br />
+               &lt;input<br />
                   class=&quot;input line-input&quot;<br />
                   type=&quot;password&quot;<br />
                   name=&quot;username&quot;<br />
                   placeholder=&quot;input line-input&quot;<br />
                 /&gt;<br />
                 &lt;br /&gt;<br />
-                &lt;span class=&quot;validation-msg-required&quot;&gt;This field is required&lt;/span&gt;<br />
+                &lt;span class=&quot;validation-msg-required&quot;&gt;Required&lt;/span&gt;<br />
                 &lt;h3&gt;.line-input input-md&lt;/h3&gt;<br />
                 &lt;input<br />
                   class=&quot;input line-input input-md&quot;<br />
@@ -1120,7 +1133,7 @@
                   placeholder=&quot;input line-input input-md&quot;<br />
                 /&gt;<br />
                 &lt;br /&gt;<br />
-                &lt;span class=&quot;validation-msg-required&quot;&gt;This field is required&lt;/span&gt;
+                &lt;span class=&quot;validation-msg-required&quot;&gt;Required&lt;/span&gt;
                   </code>
                 </pre>
               </article>
