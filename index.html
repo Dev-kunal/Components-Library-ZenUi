@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>-ui</title>
     <link rel="icon" type="image/svg" href="/Images/steering.svg" />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    /> -->
+
     <link rel="stylesheet" href="/Styles/components.css" />
     <link
       rel="stylesheet"
@@ -114,7 +111,10 @@
           <div class="social-links">
             <div class="nav-group">
               <div class="nav-item">
-                <a target="_blank" href="https://twitter.com/kunal_tijare"
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://twitter.com/kunal_tijare"
                   ><i class="fa fa-twitter"></i
                 ></a>
               </div>
@@ -146,25 +146,27 @@
               <h2 class="component-name">Alert</h2>
               <article class="component component-list component-center">
                 <div class="alert">
-                  This is an .alert <span class="alert-btn">x</span>
+                  This is an .alert <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-white">
-                  This is an .alert-white <span class="alert-btn">x</span>
+                  This is an .alert-white <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-primary">
-                  This is an .alert-primary <span class="alert-btn">x</span>
+                  This is an .alert-primary <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-success">
-                  This is an .alert-success <span class="alert-btn">x</span>
+                  This is an .alert-success <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-secondary">
-                  This is an .alert-secondary <span class="alert-btn">x</span>
+                  This is an .alert-secondary
+                  <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-danger">
-                  This is an .alert-danger <span class="alert-btn">x</span>
+                  This is an .alert-danger <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-warning">
-                  This is an .alert-warning <span class="alert-btn">x</span>
+                  This is an .alert-warning
+                  <button class="alert-btn">x</button>
                 </div>
               </article>
               <article class="component component-list component-center">
@@ -644,7 +646,7 @@
                     </p>
                   </div>
 
-                  <span class="dismiss-badge dismiss-btn">x</span>
+                  <button class="dismiss-badge dismiss-btn">x</button>
                 </div>
               </article>
               <article class="component component-list component-center">
@@ -892,26 +894,39 @@
               <h2 class="component-name">Input</h2>
               <article class="component component-list component-center">
                 <h3>.input</h3>
-                <input
-                  class="input"
-                  type="text"
-                  name="username"
-                  placeholder="input"
-                />
+                <div class="input-group">
+                  <label class="input-label" for="input-sm">Email</label>
+                  <input
+                    class="input input-sm"
+                    type="email"
+                    id="input-sm"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+
                 <h3>.input-md</h3>
-                <input
-                  class="input input-md"
-                  type="text"
-                  name="username"
-                  placeholder="input input-md"
-                />
+                <div class="input-group">
+                  <label class="input-label" for="input-md">Name</label>
+                  <input
+                    class="input input-md"
+                    type="text"
+                    id="input-md"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
                 <h3>.input-lg</h3>
-                <input
-                  class="input input-lg"
-                  type="text"
-                  name="username"
-                  placeholder="input input-lg"
-                />
+                <div class="input-group">
+                  <label class="input-label" for="input-lg">Username</label>
+                  <input
+                    class="input input-lg"
+                    type="text"
+                    id="input-lg"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
               </article>
               <article class="component component-list component-center">
                 <pre>
@@ -941,19 +956,27 @@
               </article>
               <article class="component component-list component-center">
                 <h3>.line-input</h3>
-                <input
-                  class="input line-input"
-                  type="password"
-                  name="username"
-                  placeholder="input line-input"
-                />
+                <div class="input-group">
+                  <!-- <label class="input-label" for="line-input-sm">Name</label> -->
+                  <input
+                    class="input line-input input-sm"
+                    type="text"
+                    id="line-input-sm"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
                 <h3>.line-input input-md</h3>
-                <input
-                  class="input line-input input-md"
-                  type="text"
-                  name="username"
-                  placeholder="input line-input input-md"
-                />
+                <div class="input-group">
+                  <!-- <label class="input-label" for="line-input-md">Name</label> -->
+                  <input
+                    class="input line-input input-md"
+                    type="text"
+                    id="line-input-md"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
               </article>
               <article class="component component-list component-center">
                 <pre>
@@ -980,35 +1003,46 @@
               <h2 class="component-name">Input With Validation</h2>
               <article class="component component-list component-center">
                 <h3>.input</h3>
-                <input
-                  class="input required"
-                  required
-                  type="text"
-                  name="username"
-                  placeholder="input"
-                />
-                <br />
+                <div class="input-group">
+                  <label class="input-label" for="input-valid">Username</label>
+                  <input
+                    class="input input-sm"
+                    type="text"
+                    id="input-valid"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+
                 <span class="validation-msg-required"
                   >This field is required</span
                 >
                 <h3>.input-md</h3>
-                <input
-                  class="input input-md"
-                  type="text"
-                  name="username"
-                  placeholder="input input-md"
-                />
-                <br />
+                <div class="input-group">
+                  <label class="input-label" for="input-valid">Password</label>
+                  <input
+                    class="input input-md"
+                    type="password"
+                    id="input-valid"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+
                 <span class="validation-msg-ok">Acccepted</span>
                 <h3>.input-lg</h3>
-                <input
-                  class="input input-lg"
-                  type="text"
-                  name="username"
-                  placeholder="input input-lg"
-                />
-                <br />
-                <span class="validation-msg-good">Good</span>
+                <div class="input-group">
+                  <label class="input-label" for="input-lg">Username</label>
+                  <input
+                    class="input input-lg"
+                    type="text"
+                    id="input-lg"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+
+                <span class="validation-msg-good">Verified</span>
               </article>
               <article class="component component-list component-center">
                 <pre>

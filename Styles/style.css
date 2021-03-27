@@ -112,16 +112,16 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.082);
   box-shadow: 4px 6px 3px #292e36, -4px -3px 4px #313640;
 }
-.social-links{
-    text-align: right;
-    position: absolute;
-    top: 1rem;
-    right: 6rem;
-    padding: 0.5em 1rem;
+.social-links {
+  text-align: right;
+  position: absolute;
+  top: 1rem;
+  right: 6rem;
+  padding: 0.5em 1rem;
 }
-.social-links a{
+.social-links a {
   font-size: large;
-  color:#2bc48a ;
+  color: #2bc48a;
 }
 
 .btn-copy {
@@ -159,9 +159,12 @@ body {
   .btn-toggle:active {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
+  .social-links {
+    right: -3rem;
+  }
   .btn-toggle .img-btn {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     -webkit-animation: spin 4s linear infinite;
     -moz-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;

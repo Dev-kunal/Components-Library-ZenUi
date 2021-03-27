@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 
 :root {
-  --primary-bg: #7eb2ff;
+  --primary-bg: #4e95ff;
   --white-bg: #ffffff;
-  --secondary-bg: rgb(167, 168, 170);
-  --warning-bg: #f8bb6a;
-  --danger-bg: #f66470;
-  --success-bg: #9de26f;
+  --secondary-bg: grey;
+  --warning-bg: #fcab41;
+  --danger-bg: #ff4d5b;
+  --success-bg: #92fa4d;
 
   --primary: #0b4cad;
   --secondary: #41464b;
@@ -58,6 +58,8 @@ body {
   padding: 0.3em;
   box-shadow: none;
   cursor: pointer;
+  background-color: transparent;
+  color: inherit;
 }
 .alert-white {
   color: black;
@@ -177,10 +179,8 @@ body {
   box-shadow: 4px 6px 3px #292e36, -4px -3px 4px #313640;
 }
 .btn:active {
-  /* box-shadow: 1px 1px #4d6a7c; */
-  /* transform: scale3d(1.1, 1.1, 1.1); */
   transform: translateY(2px);
-  transition: all 0.1s ease-in-out;
+  /* transition: all 0.1s ease-in-out; */
 }
 
 .btn-primary {
@@ -300,10 +300,13 @@ body {
   font-weight: bold;
   border-radius: 0.75rem;
   background-color: transparent;
-  /* border: 1px solid white; */
   background-color: var(--danger-bg);
 }
 .dismiss-btn {
+  border: none;
+  outline: none;
+  padding: 0.8em;
+  color: inherit;
 }
 
 .dismiss-badge:hover {
@@ -340,7 +343,6 @@ body {
 .horizontal-card {
   min-width: 70%;
   border-radius: 4px;
-  /* background: #2d323b; */
   box-shadow: 5px 5px 2px #292e36, -5px -5px 2px #313640;
 }
 
@@ -349,11 +351,7 @@ body {
   background: linear-gradient(145deg, #292d35, #30363f);
   box-shadow: 7px 7px 14px #242930, -7px -7px 14px #363c46;
 }
-/* .card-with-shadow2 {
-  border-radius: 8px;
-  background: #2d323b;
-  box-shadow: 7px 7px 14px #242930, -7px -7px 14px #363c46;
-} */
+
 .image-responsive {
   width: 100%;
   height: auto;
@@ -367,6 +365,13 @@ body {
 }
 
 /* ********************input********************************* */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.input-label {
+  margin-bottom: 0.3em;
+}
 .input {
   font-size: 1rem;
   padding: 0.3rem;
@@ -377,6 +382,9 @@ body {
   box-shadow: none;
   border-style: ridge;
   border-radius: 0.25rem;
+}
+.input-sm {
+  width: 25%;
 }
 .input-md {
   width: 50%;
@@ -394,9 +402,7 @@ body {
 .input:focus {
   border-bottom: 2px ridge #4d6a7c;
 }
-/* .required {
-  border-color: var(--danger-bg);
-} */
+
 .required:focus {
   border-color: auto;
 }
@@ -558,9 +564,7 @@ body {
   border: none;
   cursor: pointer;
   outline: none;
-  /* background: linear-gradient(145deg, #343a44, #2c313a); */
   background: transparent;
-  /* box-shadow: inset -5px -5px 13px #14161a, inset 5px 5px 13px #4e5666; */
 }
 .btn-test img {
   width: 2.5rem;
