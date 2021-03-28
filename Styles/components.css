@@ -169,14 +169,17 @@ body {
   margin: 1em;
   padding: 0.3rem 0.6rem;
   border: 1px solid;
-  outline: none;
   background-color: transparent;
   border-color: white;
   color: white;
   border-radius: 0.35rem;
   font-family: inherit;
+  outline: none;
   cursor: pointer;
   box-shadow: 4px 6px 3px #292e36, -4px -3px 4px #313640;
+}
+.btn:focus {
+  border: 1px solid;
 }
 .btn:active {
   transform: translateY(2px);
@@ -304,7 +307,7 @@ body {
 }
 .dismiss-btn {
   border: none;
-  outline: none;
+  outline-color: 1px ridge inherit;
   padding: 0.8em;
   color: inherit;
 }
@@ -551,7 +554,7 @@ body {
 .toast-btn:active {
   transform: scale3d(1.2, 1.2, 1.2);
 }
-.btn-test {
+.btn-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -566,7 +569,7 @@ body {
   outline: none;
   background: transparent;
 }
-.btn-test img {
+.btn-logo img {
   width: 2.5rem;
   height: 2.5rem;
   margin: 0;
