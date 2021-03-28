@@ -143,10 +143,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    /* width: 3.5rem;
+    height: 3.5rem; */
     border-radius: 50%;
-    bottom: 1rem;
+    bottom: 2rem;
     right: 3rem;
     z-index: 1;
     border: none;
@@ -164,8 +164,8 @@ body {
     right: -1rem;
   }
   .btn-toggle .img-btn {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     -webkit-animation: spin 4s linear infinite;
     -moz-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;
@@ -200,10 +200,11 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.18);
     z-index: 1;
   }
-  .main {
-    width: 100vw;
+  .mid-container .main {
+    width: 90%;
     margin: 0 auto;
     padding-bottom: 5rem;
+    overflow-x: hidden;
   }
   .active {
     transition: ease-in-out 400ms;
