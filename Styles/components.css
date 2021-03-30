@@ -170,7 +170,6 @@ html {
   padding: 0.3rem 0.6rem;
   border: 1px solid;
   background-color: transparent;
-  /* border-color: black; */
   color: black;
   border-radius: 0.35rem;
   font-family: inherit;
@@ -594,7 +593,26 @@ html {
   /* background: rgba(43, 196, 138, 0.4); */
   box-shadow: 5px 5px 20px #f5f5f5, -5px -5px 20px #ffffff;
 }
-
+/* ****************Rating****************** */
+.rating {
+  display: inline-block;
+  text-align: center;
+  padding: 0.2rem 0.3rem;
+  font-size: x-small;
+  margin: auto 0.4em;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: var(--myColor);
+  border: 1px solid white;
+  font-weight: bold;
+}
+.rating i {
+  color: #fff;
+  margin-left: 0.3em;
+}
+.rating p {
+  color: #262928e0;
+}
 .toast p {
   margin: 0;
 }
