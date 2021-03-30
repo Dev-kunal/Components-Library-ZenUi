@@ -282,6 +282,7 @@ html {
 .card-btn {
   background-color: var(--myColor);
   margin: 0;
+  color: #fff;
 }
 .card .avatar {
   width: 100%;
@@ -297,6 +298,28 @@ html {
   left: 0rem;
   border: none;
 }
+.wishlist-badge {
+  position: absolute;
+  top: 0.9 em;
+  right: 0.9em;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  border-radius: 50%;
+  background-color: #e0e0e2e7;
+}
+.wishlist-btn {
+  border: none;
+  outline-color: var(--mygrey);
+  padding: 1em;
+  color: white;
+}
+.wishlist-badge:hover {
+  color: var(--myColor);
+}
 .dismiss-badge {
   position: absolute;
   top: 0.5rem;
@@ -306,7 +329,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.3rem;
   font-size: small;
   font-weight: bold;
   border-radius: 0.75rem;
@@ -314,7 +336,7 @@ html {
 }
 .dismiss-btn {
   border: none;
-  outline-color: 1px ridge inherit;
+  outline-color: var(--mygrey);
   padding: 0.8em;
   color: white;
 }
@@ -499,18 +521,16 @@ html {
   box-shadow: 2px 4px 3px var(--mygrey), -1px 0px 4px var(--mygrey);
 }
 
-.navbar-right {
-  justify-content: space-between;
-}
-.navbar-left {
-  justify-content: flex-start;
-}
-.navbar-center {
-  justify-content: center;
-}
 .nav-brand {
-  height: 1.3rem;
-  width: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+.nav-brand-heading {
+  margin-right: 1em;
+}
+.brand-img {
+  height: 2rem;
+  width: 2rem;
   margin: 0 1em;
 }
 .nav-item {
@@ -521,6 +541,15 @@ html {
 }
 .nav-item:hover {
   background-color: #10f59d18;
+}
+.navbar-right {
+  justify-content: space-between;
+}
+.navbar-left {
+  justify-content: flex-start;
+}
+.navbar-center {
+  justify-content: center;
 }
 
 /* ************************Modal*************************************** */
