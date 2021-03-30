@@ -158,8 +158,8 @@ html {
 }
 .badge-icon {
   position: relative;
-  top: -2.1rem;
-  right: 1.2rem;
+  bottom: 1.8em;
+  right: 1em;
   border-radius: 50%;
   margin: 0;
 }
