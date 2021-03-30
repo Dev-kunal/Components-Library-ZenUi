@@ -267,14 +267,13 @@ html {
 /* *************Card************ */
 .card {
   position: relative;
-  /* display: flex; */
   padding: 1rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border: 1px solid var(--mygrey);
   margin: 0 auto;
-  max-width: 18rem;
+  min-width: 15rem;
   border-radius: 7px;
   border-radius: 0.2rem;
   background: #fafafa;
