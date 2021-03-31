@@ -314,11 +314,9 @@ html {
   border: none;
   outline-color: var(--mygrey);
   padding: 1em;
-  color: white;
-}
-.wishlist-badge:hover {
   color: var(--myColor);
 }
+
 .dismiss-badge {
   position: absolute;
   top: 0.5rem;
