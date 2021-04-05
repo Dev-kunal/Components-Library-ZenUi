@@ -1,10 +1,13 @@
 # Components Library
- A Simple and Minimal Css Library for Everyone especially for the ones who love Dark Mode
+ A Simple and Minimal Css Library for Everyone especially for the ones who love minimialism
+ 
+ Live :
+ https://zenui.netlify.app/
  
  Here is the CDN:
  
- https://dashedui.netlify.app/Styles/components.css
+ https://zenui.netlify.app/Styles/components.css
  
  and Script:
  
- https://dashedui.netlify.app/Js/components.js
+ https://zenui.netlify.app/Js/components.js
