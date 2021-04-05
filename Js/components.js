@@ -26,7 +26,7 @@ const closeToast = () => {
   toast.style.display = "none";
 };
 
-const toatBtn = document
+const toastBtn = document
   .querySelector(".toast-btn")
   .addEventListener("click", closeToast);
 
@@ -44,9 +44,3 @@ alertbuttons.forEach((element) => {
   const alertBox = element.parentElement;
   element.addEventListener("click", () => closeAlert(alertBox));
 });
-
-// btnCopy.addEventListener("click", () => {
-//   const textToCopy = btnCopy.nextElementSibling.innerText;
-//   // document.execCommand()
-//   console.log(textToCopy);
-// });

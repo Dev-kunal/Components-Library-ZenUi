@@ -586,10 +586,23 @@ html {
   bottom: 2em;
   right: 2em;
   border: 1px solid var(--myColor);
-  color: var(--myColor);
+  color: #fff;
   border-radius: 0.3em;
-  /* background: rgba(43, 196, 138, 0.4); */
+  background-color: var(--myColor);
   box-shadow: 5px 5px 20px #f5f5f5, -5px -5px 20px #ffffff;
+}
+.toast-btn {
+  font-weight: bolder;
+  margin: 0 0 0 1em;
+  border: none;
+  border-radius: 0.1em;
+  font-size: smaller;
+  padding: 0.3em;
+  box-shadow: none;
+  color: inherit;
+}
+.toast-btn:active {
+  transform: scale3d(1.2, 1.2, 1.2);
 }
 /* ****************Rating****************** */
 .rating {
@@ -614,19 +627,7 @@ html {
 .toast p {
   margin: 0;
 }
-.toast-btn {
-  font-weight: bolder;
-  margin: 0 0 0 1em;
-  border: none;
-  border-radius: 0.1em;
-  font-size: smaller;
-  padding: 0.3em;
-  box-shadow: none;
-  color: var(--myColor);
-}
-.toast-btn:active {
-  transform: scale3d(1.2, 1.2, 1.2);
-}
+
 .btn-logo {
   display: flex;
   justify-content: center;
