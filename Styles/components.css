@@ -582,7 +582,7 @@ html {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   bottom: 2em;
   right: 2em;
   border: 1px solid var(--myColor);
