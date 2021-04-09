@@ -176,7 +176,7 @@ html {
   outline: none;
   cursor: pointer;
   border: 1px solid rgba(126, 124, 124, 0.637);
-  box-shadow: 5px 5px 7px #e3e3e3, -5px -5px 7px #ffffff;
+  box-shadow: 5px 5px 7px #00000033, -5px -5px 7px #0a0a0a00;
 }
 .btn:focus {
   border: 1px solid;
