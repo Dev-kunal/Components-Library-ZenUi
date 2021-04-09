@@ -187,8 +187,8 @@ html {
 }
 .btn-secondary {
   background-color: #fff;
-  border-color: black;
-  color: black;
+  border-color: #00000033;
+  color: rgba(0, 0, 0, 0.931);
 }
 .btn-primary {
   background-color: var(--primary-bg);
