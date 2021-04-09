@@ -166,10 +166,10 @@ html {
 /* *********** Button ****************/
 
 .btn {
-  margin: 0.2em;
+  margin: 0.4em 0.2em;
   padding: 0.3rem 0.6rem;
   border: 1px solid;
-  background-color: transparent;
+  background-color: var(--myColor);
   color: #fff;
   border-radius: 0.35rem;
   font-family: inherit;
@@ -191,7 +191,7 @@ html {
   color: black;
 }
 .btn-primary {
-  background-color: var(--myColor);
+  background-color: var(--primary-bg);
   border-color: var(--primary);
 }
 .btn-warning {
