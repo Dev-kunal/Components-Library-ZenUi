@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-::-webkit-scrollbar {
-  display: none;
+:root {
+  --myColor: #2bc48a;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #262928e0;
   background-color: #fffe;
 }
@@ -24,9 +24,8 @@ body {
   background-color: white;
 }
 .header-brand {
-  /* font-size: xxx-large; */
   padding: 1.3rem;
-  background-color: #fff;
+  background-color: white;
 }
 .main {
   margin-top: 4rem;
@@ -47,8 +46,6 @@ body {
 .btn-toggle {
   display: none;
 }
-
-/* ******************************** copied from last version************************************************/
 
 .component-container {
   margin: 0 auto;
@@ -76,11 +73,10 @@ body {
   text-decoration: none;
   color: inherit;
 }
-/* ************Hover */
 
 .sidenav ul > li:hover {
   background-color: var(--myColor);
-  color: #fafafa;
+  color: white;
   border-radius: 3px;
 }
 .component {
@@ -90,27 +86,29 @@ body {
   border-radius: 5px;
   margin: 0.5rem auto;
   max-width: 42rem;
-  background-color: #323335a6;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  border: 2px solid rgba(255, 255, 255, 0.082);
   background-color: transparent;
-  border: 1px solid #2bc48a;
+  border: 1px solid var(--myColor);
 }
 
 .hljs {
   position: relative;
   font-family: "Source Code Pro", monospace;
   display: block;
-  padding: 1em 0.5em;
-  background: transparent;
-  color: #ff8f00;
+  padding: 0.9rem 0.1rem;
+  background-color: #002b36;
+  color: #ecc48d;
+  font-family: "Rubik", sans-serif;
   border-radius: 5px;
   line-height: 0.8;
   text-align: left;
   border: 1px solid rgb(180 176 176 / 71%);
-
-  background-color: #f6f7f9;
+}
+.hljs-string {
+  color: var(--myColor);
+}
+.hljs-name,
+.hljs-attr {
+  color: orange;
 }
 .social-links {
   text-align: right;
@@ -121,7 +119,7 @@ body {
 }
 .social-links a {
   font-size: large;
-  color: #2bc48a;
+  color: var(--myColor);
 }
 
 .btn-copy {
@@ -129,9 +127,23 @@ body {
   top: 1em;
   right: 1em;
 }
+/* ********Scrollbar********** */
+
+::-webkit-scrollbar {
+  width: 0.9rem;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--mygrey);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--myColor);
+}
 /* ***************** Media Mobile ************************* */
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 767px) {
   body {
     overflow-x: hidden;
     background-color: #fff;
@@ -153,40 +165,17 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
-    background: #2d323b;
-    /* box-shadow: 4px 6px 3px #292e36, -4px -3px 4px #313640; */
-  }
-  .btn-toggle:active {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background: #002b36;
   }
   .social-links {
     right: -1rem;
   }
-  .btn-toggle .img-btn {
+  .img-btn {
     width: 2.5rem;
     height: 2.5rem;
-    -webkit-animation: spin 4s linear infinite;
-    -moz-animation: spin 4s linear infinite;
-    animation: spin 4s linear infinite;
   }
-  @-moz-keyframes spin {
-    100% {
-      -moz-transform: rotate(360deg);
-    }
-  }
-  @-webkit-keyframes spin {
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  @keyframes spin {
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
+
   .sidenav {
-    overflow-y: scroll;
     margin-left: -289px;
     transition: ease-in-out 500ms;
     height: 100%;
