@@ -156,11 +156,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     bottom: 1rem;
-    right: 3rem;
+    right: 2rem;
     z-index: 1;
     border: none;
     cursor: pointer;
@@ -171,8 +171,8 @@ body {
     right: -1rem;
   }
   .img-btn {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .sidenav {
