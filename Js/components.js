@@ -1,5 +1,3 @@
-// console.log("Connected");
-
 // const alertboxes = document.querySelectorAll(".alert");
 const modal = document.querySelector(".modal");
 const toast = document.querySelector(".toast");
