@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>-ui</title>
+    <title>Zen-ui</title>
     <link rel="icon" type="image/svg" href="/Images/steering.svg" />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    /> -->
+
     <link rel="stylesheet" href="/Styles/components.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/solarized-dark.min.css"
     />
+
     <link rel="stylesheet" href="/Styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
@@ -24,19 +26,17 @@
       <button class="btn btn-toggle">
         <img class="img-btn" src="/Images/steering.svg" />
       </button>
+
       <div class="mid-container">
-        <div class="sidenav">
+        <aside class="sidenav">
           <div class="header-brand">
-            <span class="btn-test" style="display: inline; margin-right: 0">
+            <span class="btn-logo" style="display: inline; margin-right: 0">
               <img class="img-btn" src="/Images/steering.svg" />
             </span>
-            <h2>-ui</h2>
+            <h2>Zen-ui</h2>
           </div>
           <ul class="component-list">
-            <!-- <div class="note">
-              <strong>Note : </strong> Just use add this in your css - <br />
-              body{ background-color: #2d323b; color: white }
-            </div> -->
+            <li><a href="#getting-started">Getting Started</a></li>
             <li><a href="#alert">Alert</a></li>
 
             <li><a href="#avatar">Avatar</a></li>
@@ -84,79 +84,101 @@
               <a href="#stacked-list">Stacked List (Notification List)</a>
             </li>
             <li><a href="#navigation">Navigation</a></li>
-            <!-- <li>
-              <a href="#resposive-navbar" >
-                Desktop (Simple) - Submenus (do later) - Hamburger/Drawer (do
-                later)
-              </a>
-            </li> -->
+
+            <li><a href="#rating">Rating </a></li>
             <li><a href="#modal">Modal</a></li>
 
-            <!-- <li><a href="#rating">Rating </a></li> -->
-
-            <!-- <li>Slider (do later)</li>
-
-            <li>Grid - grid-2: two items in a grid - grid-3: three items -</li>
-            <li>
-              Text Utilities - headings - small text - gray text - center text
-            </li> -->
             <li><a href="#toast">Toast/Notify/Snackbar</a></li>
           </ul>
-        </div>
+        </aside>
         <div class="main">
+          <div class="social-links">
+            <div class="nav-group">
+              <div class="nav-item">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://twitter.com/kunal_tijare"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </div>
+              <div class="nav-item">
+                <a
+                  target="_blank"
+                  href="https://github.com/Dev-kunal/Components-Library-ZenUi"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
           <ul class="component-list">
+            <li id="getting-started">
+              <h2 class="component-name">Getting Started</h2>
+              <article class="component component-list component-center">
+                <strong
+                  >Add this in &lt;head/&gt; of your HTML and you're ready to
+                  Go..🏹🚀</strong
+                >
+                <pre>
+                  <code class="html">
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://zenui.netlify.app/Styles/components.css&quot;&gt;
+                  </code>
+                </pre>
+              </article>
+            </li>
             <li id="alert">
               <h2 class="component-name">Alert</h2>
               <article class="component component-list component-center">
                 <div class="alert">
-                  This is an .alert <span class="alert-btn">x</span>
+                  This is an .alert <button class="alert-btn">x</button>
                 </div>
-                <div class="alert alert-white">
-                  This is an .alert-white <span class="alert-btn">x</span>
+                <div class="alert alert-mycolor">
+                  This is an .alert-mycolor <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-primary">
-                  This is an .alert-primary <span class="alert-btn">x</span>
+                  This is an .alert-primary <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-success">
-                  This is an .alert-success <span class="alert-btn">x</span>
+                  This is an .alert-success <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-secondary">
-                  This is an .alert-secondary <span class="alert-btn">x</span>
+                  This is an .alert-secondary
+                  <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-danger">
-                  This is an .alert-danger <span class="alert-btn">x</span>
+                  This is an .alert-danger <button class="alert-btn">x</button>
                 </div>
                 <div class="alert alert-warning">
-                  This is an .alert-warning <span class="alert-btn">x</span>
+                  This is an .alert-warning
+                  <button class="alert-btn">x</button>
                 </div>
               </article>
               <article class="component component-list component-center">
-                <!-- <button class="btn btn-copy">Copy</button> -->
                 <pre>
-                  <code class="html">
-                &lt;div class=&quot;alert&quot;&gt;<br />
-                  This is an .alert &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;div class=&quot;alert alert-white&quot;&gt;<br />
-                  This is an .alert-white &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;div class=&quot;alert alert-primary&quot;&gt;<br />
-                  This is an .alert-primary &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;div class=&quot;alert alert-success&quot;&gt;<br />
-                  This is an .alert-success &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;div class=&quot;alert alert-secondary&quot;&gt;<br />
-                  This is an .alert-secondary &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;div class=&quot;alert alert-danger&quot;&gt;<br />
-                  This is an .alert-danger &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;div class=&quot;alert alert-warning&quot;&gt;<br />
-                  This is an .alert-warning &lt;span class=&quot;alert-btn&quot;&gt;x&lt;/span&gt;<br />
-                &lt;/div&gt;
-                  </code>
-                </pre>
+      <code class="html">
+        &lt;div class=&quot;alert&quot;&gt;<br />
+          This is an .alert &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;alert alert-white&quot;&gt;<br />
+          This is an .alert-white &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;alert alert-primary&quot;&gt;<br />
+          This is an .alert-primary &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;alert alert-success&quot;&gt;<br />
+          This is an .alert-success &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;alert alert-secondary&quot;&gt;<br />
+          This is an .alert-secondary &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;alert alert-danger&quot;&gt;<br />
+          This is an .alert-danger &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/button&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;alert alert-warning&quot;&gt;<br />
+          This is an .alert-warning &lt;button class=&quot;alert-btn&quot;&gt;x&lt;/n&gt;<br />
+        &lt;/div&gt;
+      </code>
+              </pre>
               </article>
             </li>
             <li id="avatar">
@@ -191,24 +213,24 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                    &lt;img<br />
-                      class=&quot;avatar&quot;<br />
-                      src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
-                      alt=&quot;Avatar&quot;<br />
-                    /&gt;
-                    &lt;img<br />
-                      class=&quot;avatar-circle&quot;<br />
-                      src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
-                      alt=&quot;Avatar&quot;<br />
-                    /&gt;
-                    &lt;img<br />
-                      class=&quot;avatar-small&quot;<br />
-                      src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
-                      alt=&quot;Avatar&quot;<br />
-                    /&gt;
-                </code>
-              </pre>
+        <code class="html">
+      &lt;img<br />
+        class=&quot;avatar&quot;<br />
+        src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
+        alt=&quot;Avatar&quot;<br />
+      /&gt;
+      &lt;img<br />
+        class=&quot;avatar-circle&quot;<br />
+        src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
+        alt=&quot;Avatar&quot;<br />
+      /&gt;
+      &lt;img<br />
+        class=&quot;avatar-small&quot;<br />
+        src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
+        alt=&quot;Avatar&quot;<br />
+      /&gt;
+      </code>
+               </pre>
               </article>
             </li>
 
@@ -231,122 +253,64 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;h3&gt;.badge &lt;span class=&quot;badge&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;<br />
-                &lt;h3&gt;<br />
-                  .badge-primary &lt;span class=&quot;badge badge-primary&quot;&gt;New&lt;/span&gt;<br />
-                &lt;/h3&gt;<br />
-                &lt;h3&gt;<br />
-                  .badge-success &lt;span class=&quot;badge badge-success&quot;&gt;New&lt;/span&gt;<br />
-                &lt;/h3&gt;<br />
-                &lt;h3&gt;<br />
-                  .badge-warning &lt;span class=&quot;badge badge-warning&quot;&gt;New&lt;/span&gt;<br />
-                &lt;/h3&gt;<br />
-                &lt;h3&gt;<br />
-                  .badge-danger &lt;span class=&quot;badge badge-danger&quot;&gt;New&lt;/span&gt;<br />
-                &lt;/h3&gt;
-                  </code>
-                </pre>
+        <code class="html">
+    &lt;h3&gt;.badge &lt;span class=&quot;badge&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;<br />
+    &lt;h3&gt;<br />
+      .badge-primary &lt;span class=&quot;badge badge-primary&quot;&gt;New&lt;/span&gt;<br />
+    &lt;/h3&gt;<br />
+    &lt;h3&gt;<br />
+      .badge-success &lt;span class=&quot;badge badge-success&quot;&gt;New&lt;/span&gt;<br />
+    &lt;/h3&gt;<br />
+    &lt;h3&gt;<br />
+      .badge-warning &lt;span class=&quot;badge badge-warning&quot;&gt;New&lt;/span&gt;<br />
+    &lt;/h3&gt;<br />
+    &lt;h3&gt;<br />
+      .badge-danger &lt;span class=&quot;badge badge-danger&quot;&gt;New&lt;/span&gt;<br />
+    &lt;/h3&gt;
+        </code>
+               </pre>
               </article>
             </li>
             <li id="badge-icon">
               <h2 class="component-name">Badge on Icons</h2>
               <article class="component component-list component-center">
                 <h3>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    fill="white"
-                    class="bi bi-bell"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
-                    />
-                  </svg>
-
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <span class="badge badge-icon">9</span>
                   .badge badge-icon
                 </h3>
                 <h3>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    fill="white"
-                    class="bi bi-bell"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
-                    />
-                  </svg>
-
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <span class="badge badge-icon badge-primary">9</span>
                   .badge badge-icon badge-primary
                 </h3>
                 <h3>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    fill="white"
-                    class="bi bi-bell"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
-                    />
-                  </svg>
-
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <span class="badge badge-icon badge-warning">9</span>
                   .badge badge-icon badge-warning
                 </h3>
                 <h3>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    fill="white"
-                    class="bi bi-bell"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
-                    />
-                  </svg>
-
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <span class="badge badge-icon badge-danger">9</span>
                   .badge badge-icon badge-danger
                 </h3>
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                     &lt;svg<br />
-                    xmlns=&quot;http://www.w3.org/2000/svg&quot;<br />
-                    width=&quot;30&quot;<br />
-                    height=&quot;30&quot;<br />
-                    fill=&quot;white&quot;<br />
-                    class=&quot;bi bi-bell&quot;<br />
-                    viewBox=&quot;0 0 16 16&quot;<br />
-                  &gt;<br />
-                    &lt;path<br />
-                      d=&quot;M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z&quot;<br />
-                    /&gt;<br />
-                  &lt;/svg&gt;<br />
-                  &lt;span class=&quot;badge badge-icon&quot;&gt;9&lt;/span&gt;
-                  <br>
-                   &lt;img src=&quot;bell.svg&quot; height=&quot;30&quot; width=&quot;30&quot; alt=&quot;&quot; /&gt;<br />
-                   &lt;span class=&quot;badge badge-icon badge-primary&quot;&gt;9&lt;/span&gt;
-                  <br>
-                   &lt;img src=&quot;bell.svg&quot; height=&quot;30&quot; width=&quot;30&quot; alt=&quot;&quot; /&gt;<br />
-                   &lt;span class=&quot;badge badge-icon badge-warning&quot;&gt;9&lt;/span&gt;
-                  <br>
-                   &lt;img src=&quot;bell.svg&quot; height=&quot;30&quot; width=&quot;30&quot; alt=&quot;&quot; /&gt;<br />
-                   &lt;span class=&quot;badge badge-icon badge-danger&quot;&gt;9&lt;/span&gt;
-                  </code>
+      <code class="html">
+      &lt;i class=&quot;fa fa-shopping-cart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br />
+      &lt;span class=&quot;badge badge-icon&quot;&gt;9&lt;/span&gt;<br />
+      .badge badge-icon<br />
+      &lt;i class=&quot;fa fa-shopping-cart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br />
+      &lt;span class=&quot;badge badge-icon badge-primary&quot;&gt;9&lt;/span&gt;<br />
+      .badge badge-icon badge-primary<br />
+      &lt;i class=&quot;fa fa-shopping-cart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br />
+      &lt;span class=&quot;badge badge-icon badge-warning&quot;&gt;9&lt;/span&gt;<br />
+      .badge badge-icon badge-warning<br />
+      &lt;i class=&quot;fa fa-shopping-cart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br />
+      &lt;span class=&quot;badge badge-icon badge-danger&quot;&gt;9&lt;/span&gt;<br />
+      .badge badge-icon badge-danger
+      </code>
                 </pre>
               </article>
             </li>
@@ -355,19 +319,21 @@
               <article class="component component-list component-center">
                 <button class="btn">.btn</button>
                 <button class="btn btn-primary">.btn-primary</button>
+                <button class="btn btn-secondary">.btn-secondary</button>
                 <button class="btn btn-success">.btn-success</button>
                 <button class="btn btn-warning">.btn-warning</button>
                 <button class="btn btn-danger">.btn-danger</button>
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                    &lt;button class=&quot;btn&quot;&gt;.btn&lt;/button&gt;<br />
-                    &lt;button class=&quot;btn btn-primary&quot;&gt;.btn-primary&lt;/button&gt;<br />
-                    &lt;button class=&quot;btn btn-success&quot;&gt;.btn-success&lt;/button&gt;<br />
-                    &lt;button class=&quot;btn btn-warning&quot;&gt;.btn-warning&lt;/button&gt;<br />
-                    &lt;button class=&quot;btn btn-danger&quot;&gt;.btn-danger&lt;/button&gt;
-                  </code>
+      <code class="html">
+        &lt;button class=&quot;btn&quot;&gt;.btn&lt;/button&gt;<br />
+        &lt;button class=&quot;btn btn-primary&quot;&gt;.btn-primary&lt;/button&gt;<br />
+        &lt;button class=&quot;btn btn-secondary&quot;&gt;.btn-secondary&lt;/button&gt;<br />
+        &lt;button class=&quot;btn btn-success&quot;&gt;.btn-success&lt;/button&gt;<br />
+        &lt;button class=&quot;btn btn-warning&quot;&gt;.btn-warning&lt;/button&gt;<br />
+        &lt;button class=&quot;btn btn-danger&quot;&gt;.btn-danger&lt;/button&gt;
+      </code>
                 </pre>
               </article>
               <h2 id="button-icon" class="component-name">
@@ -375,105 +341,29 @@
               </h2>
               <article class="component component-list component-center">
                 <button class="btn btn-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    fill="currentColor"
-                    class="bi bi-cloud-arrow-down-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"
-                    />
-                  </svg>
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
                 </button>
                 <button class="btn btn-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    fill="currentColor"
-                    class="bi bi-cloud-arrow-down"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"
-                    />
-                    <path
-                      d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"
-                    />
-                  </svg>
+                  <i class="fa fa-cloud-upload" aria-hidden="true"></i>
                 </button>
                 <button class="btn btn-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    fill="orangered"
-                    class="bi bi-heart"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
-                    />
-                  </svg>
+                  <i class="fa fa-heart" aria-hidden="true"></i>
                 </button>
                 <button class="btn btn-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    fill="orangered"
-                    class="bi bi-heart-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-                    />
-                  </svg>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
                 </button>
-                <span class="btn floating-action-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    fill="currentColor"
-                    class="bi bi-plus"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
-                    />
-                  </svg>
-                </span>
-
-                <br />
-                <strong>Note : Using Bootstrap icons inside button tag</strong>
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                  &lt;button class=&quot;btn btn-icon&quot;&gt;<br />
-                    &lt;svg<br />
-                    xmlns=&quot;http://www.w3.org/2000/svg&quot;<br />
-                    width=&quot;30&quot;<br />
-                    height=&quot;30&quot;<br />
-                    fill=&quot;currentColor&quot;<br />
-                    class=&quot;bi bi-cloud-arrow-down-fill&quot;<br />
-                    viewBox=&quot;0 0 16 16&quot;<br />
-                    &gt;<br />
-                    &lt;path<br />
-                      d=&quot;M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z&quot;<br />
-                    /&gt;<br />
-                  &lt;/svg&gt;<br />
-                &lt;/button&gt;<br/>
-                 &lt;button class=&quot;btn btn-icon&quot;&gt;<br />
-                 &lt;img src=&quot;bell.svg&quot; height=&quot;30&quot; width=&quot;30&quot; alt=&quot;&quot;&gt;<br />
-                &lt;/button&gt;
-                  </code>
+      <code class="html">
+    &lt;button class=&quot;btn btn-icon&quot;&gt;<br />
+        &lt;i class=&quot;fa fa-cloud-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br/>
+    &lt;/button&gt;<br/>
+    &lt;button class=&quot;btn btn-icon&quot;&gt;<br />
+        &lt;i class=&quot;fa fa-cloud-upload&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br/>
+    &lt;/button&gt;<br/>
+    
+      </code>
                 </pre>
               </article>
               <h2 class="component-name">Link</h2>
@@ -484,11 +374,11 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;a class=&quot;link&quot;&gt;.link&lt;/a&gt;<br />
-                &lt;a class=&quot;link link-primary&quot;&gt;.link-primary&lt;/a&gt;<br />
-                &lt;a class=&quot;link link-warning&quot;&gt;.link-warning&lt;/a&gt;
-                  </code>
+      <code class="html">
+    &lt;a class=&quot;link&quot;&gt;.link&lt;/a&gt;<br />
+    &lt;a class=&quot;link link-primary&quot;&gt;.link-primary&lt;/a&gt;<br />
+    &lt;a class=&quot;link link-warning&quot;&gt;.link-warning&lt;/a&gt;
+      </code>
                 </pre>
               </article>
             </li>
@@ -516,25 +406,25 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                  &lt;div class=&quot;card&quot;&gt;<br />
-                   &lt;div class=&quot;card-img&quot;&gt;<br />
-                      &lt;img<br />
-                        class=&quot;avatar&quot;<br />
-                        src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
-                        alt=&quot;Avatar&quot;<br />
-                      /&gt;<br />
-                    &lt;/div&gt;<br />
-                    &lt;div class=&quot;card-text&quot;&gt;<br />
-                        &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
-                        &lt;p&gt;<br />
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
-                          Natus consequuntur placeat quibusdam reiciendis dolorem<br />
-                          eaque ipsum ducimus.<br />
-                        &lt;/p&gt;<br />
-                    &lt;/div&gt;<br />
-                 &lt;/div&gt;
-                  </code>
+      <code class="html">
+      &lt;div class=&quot;card&quot;&gt;<br />
+        &lt;div class=&quot;card-img&quot;&gt;<br />
+          &lt;img<br />
+            class=&quot;avatar&quot;<br />
+            src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
+            alt=&quot;Avatar&quot;<br />
+          /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;card-text&quot;&gt;<br />
+            &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
+            &lt;p&gt;<br />
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+              Natus consequuntur placeat quibusdam reiciendis dolorem<br />
+              eaque ipsum ducimus.<br />
+            &lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+      &lt;/div&gt;
+      </code>
                 </pre>
               </article>
             </li>
@@ -563,26 +453,26 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-              &lt;div class=&quot;card card-with-badge&quot;&gt;<br />
-                  &lt;div class=&quot;card-img&quot;&gt;<br />
-                    &lt;img<br />
-                      class=&quot;avatar&quot;<br />
-                      src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
-                      alt=&quot;Avatar&quot;<br />
-                    /&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;card-text&quot;&gt;<br />
-                    &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
-                    &lt;p&gt;<br />
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
-                      Natus consequuntur placeat quibusdam reiciendis dolorem<br />
-                      eaque ipsum ducimus.<br />
-                    &lt;/p&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;span class=&quot;badge card-badge&quot;&gt;New&lt;/span&gt;<br />
-              &lt;/div&gt;
-                  </code>
+          <code class="html">
+      &lt;div class=&quot;card card-with-badge&quot;&gt;<br />
+          &lt;div class=&quot;card-img&quot;&gt;<br />
+            &lt;img<br />
+              class=&quot;avatar&quot;<br />
+              src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
+              alt=&quot;Avatar&quot;<br />
+            /&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;div class=&quot;card-text&quot;&gt;<br />
+            &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
+            &lt;p&gt;<br />
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+              Natus consequuntur placeat quibusdam reiciendis dolorem<br />
+              eaque ipsum ducimus.<br />
+            &lt;/p&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;span class=&quot;badge card-badge&quot;&gt;New&lt;/span&gt;<br />
+      &lt;/div&gt;
+          </code>
                 </pre>
               </article>
             </li>
@@ -606,32 +496,91 @@
                       eaque ipsum ducimus.
                     </p>
                   </div>
-
-                  <span class="dismiss-badge dismiss-btn">x</span>
+                  <button class="dismiss-badge dismiss-btn">x</button>
                 </div>
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;div class=&quot;card card-dismiss&quot;&gt;<br />
-                  &lt;div class=&quot;card-img&quot;&gt;<br />
-                    &lt;img<br />
-                      class=&quot;avatar&quot;<br />
-                      src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
-                      alt=&quot;Avatar&quot;<br />
-                    /&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;card-text&quot;&gt;<br />
-                    &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
-                    &lt;p&gt;<br />
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
-                      Natus consequuntur placeat quibusdam reiciendis dolorem<br />
-                      eaque ipsum ducimus.<br />
-                    &lt;/p&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;span class=&quot;dismiss-badge dismiss-btn&quot;&gt;x&lt;/span&gt;<br />
-                &lt;/div&gt;
-                  </code>
+        <code class="html">
+      &lt;div class=&quot;card card-dismiss&quot;&gt;<br />
+        &lt;div class=&quot;card-img&quot;&gt;<br />
+          &lt;img<br />
+            class=&quot;avatar&quot;<br />
+            src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
+            alt=&quot;Avatar&quot;<br />
+          /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;card-text&quot;&gt;<br />
+          &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
+          &lt;p&gt;<br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+            Natus consequuntur placeat quibusdam reiciendis dolorem<br />
+            eaque ipsum ducimus.<br />
+          &lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;button class=&quot;dismiss-badge dismiss-btn&quot;&gt;x&lt;/button&gt;<br />
+      &lt;/div&gt;
+        </code>
+                </pre>
+              </article>
+            </li>
+            <li id="card">
+              <h2 class="component-name">Product Card</h2>
+              <article class="component component-list component-center">
+                <h3>.wishlist-btn</h3>
+                <div class="card product-card">
+                  <button class="wishlist-badge wishlist-btn">
+                    <i class="fa fa-heart-o"></i>
+                  </button>
+                  <div class="card-img">
+                    <img
+                      src="https://images-na.ssl-images-amazon.com/images/I/71QE00iB9IL._SL1500_.jpg"
+                      width="100%"
+                      height="auto"
+                      alt="img-logo"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      <strong>Apple i-phone 11</strong
+                      ><span class="rating"
+                        >4.8<i class="fa fa-star" aria-hidden="true"></i
+                      ></span>
+                      <br />
+                      <strong>₹44,999</strong>
+                    </p>
+                  </div>
+                  <button class="btn">add to Cart</button>
+                </div>
+              </article>
+              <article class="component component-list component-center">
+                <pre>
+        <code class="html">
+        &lt;div class=&quot;card product-card&quot;&gt;<br />
+        &lt;button class=&quot;wishlist-badge wishlist-btn&quot;&gt;<br />
+          &lt;i class=&quot;fa fa-heart-o&quot;&gt;&lt;/i&gt;<br />
+        &lt;/button&gt;<br />
+        &lt;div class=&quot;card-img&quot;&gt;<br />
+          &lt;img<br />
+            src=&quot;https://images-na.ssl-images-amazon.com/images/I/71QE00iB9IL._SL1500_.jpg&quot;<br />
+            width=&quot;100%&quot;<br />
+            height=&quot;auto&quot;<br />
+            alt=&quot;img-logo&quot;<br />
+          /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;card-text&quot;&gt;<br />
+          &lt;p&gt;<br />
+            &lt;strong&gt;Apple i-phone 11&lt;/strong<br />
+            &gt;&lt;span class=&quot;rating&quot;<br />
+              &gt;4.8&lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i<br />
+            &gt;&lt;/span&gt;<br />
+            &lt;br /&gt;<br />
+            &lt;strong&gt;₹44,999&lt;/strong&gt;<br />
+          &lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;button class=&quot;btn &quot;&gt;add to Cart&lt;/button&gt;<br />
+      &lt;/div&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -671,37 +620,37 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;div class=&quot;card card-with-overlay&quot;&gt;<br />
-                  &lt;div class=&quot;card-img&quot;&gt;<br />
-                    &lt;img<br />
-                      class=&quot;avatar&quot;<br />
-                      src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
-                      alt=&quot;Avatar&quot;<br />
-                    /&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;card-text&quot;&gt;<br />
-                    &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
-                    &lt;p&gt;<br />
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
-                      Natus consequuntur placeat quibusdam reiciendis dolorem<br />
-                      eaque ipsum ducimus.<br />
-                    &lt;/p&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;card-overlay&quot;&gt;<br />
-                    &lt;div class=&quot;overlay-text&quot;&gt;<br />
-                      &lt;h4&gt;this is overlay&lt;/h4&gt;<br />
-                      &lt;p&gt;<br />
-                        this is overlay para Lorem ipsum dolor sit amet<br />
-                        consectetur adipisicing elit. Id enim accusantium<br />
-                        exercitationem earum omnis quas ducimus natus ipsum<br />
-                        illo? Deserunt optio veritatis magni iusto nobis?<br />
-                        Debitis officia sint nesciunt et.<br />
-                      &lt;/p&gt;<br />
-                    &lt;/div&gt;<br />
-                  &lt;/div&gt;<br />
-                &lt;/div&gt;
-                  </code>
+        <code class="html">
+      &lt;div class=&quot;card card-with-overlay&quot;&gt;<br />
+        &lt;div class=&quot;card-img&quot;&gt;<br />
+          &lt;img<br />
+            class=&quot;avatar&quot;<br />
+            src=&quot;https://cdn2.iconfinder.com/data/icons/flatfaces-everyday-people-square/128/beard_male_man_face_avatar-512.png&quot;<br />
+            alt=&quot;Avatar&quot;<br />
+          /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;card-text&quot;&gt;<br />
+          &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
+          &lt;p&gt;<br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+            Natus consequuntur placeat quibusdam reiciendis dolorem<br />
+            eaque ipsum ducimus.<br />
+          &lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;card-overlay&quot;&gt;<br />
+          &lt;div class=&quot;overlay-text&quot;&gt;<br />
+            &lt;h4&gt;this is overlay&lt;/h4&gt;<br />
+            &lt;p&gt;<br />
+              this is overlay para Lorem ipsum dolor sit amet<br />
+              consectetur adipisicing elit. Id enim accusantium<br />
+              exercitationem earum omnis quas ducimus natus ipsum<br />
+              illo? Deserunt optio veritatis magni iusto nobis?<br />
+              Debitis officia sint nesciunt et.<br />
+            &lt;/p&gt;<br />
+          &lt;/div&gt;<br />
+        &lt;/div&gt;<br />
+      &lt;/div&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -722,18 +671,18 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;div class=&quot;card&quot;&gt;<br />
-                  &lt;div class=&quot;card-text&quot;&gt;<br />
-                    &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
-                    &lt;p&gt;<br />
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
-                      Natus consequuntur placeat quibusdam reiciendis dolorem<br />
-                      eaque ipsum ducimus.<br />
-                    &lt;/p&gt;<br />
-                  &lt;/div&gt;<br />
-                &lt;/div&gt;
-                  </code>
+        <code class="html">
+      &lt;div class=&quot;card&quot;&gt;<br />
+        &lt;div class=&quot;card-text&quot;&gt;<br />
+          &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
+          &lt;p&gt;<br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+            Natus consequuntur placeat quibusdam reiciendis dolorem<br />
+            eaque ipsum ducimus.<br />
+          &lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+      &lt;/div&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -754,18 +703,18 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;div class=&quot;card card-with-shadow&quot;&gt;<br />
-                  &lt;div class=&quot;card-text&quot;&gt;<br />
-                    &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
-                    &lt;p&gt;<br />
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
-                      Natus consequuntur placeat quibusdam reiciendis dolorem<br />
-                      eaque ipsum ducimus.<br />
-                    &lt;/p&gt;<br />
-                  &lt;/div&gt;<br />
-                &lt;/div&gt;
-                  </code>
+          <code class="html">
+        &lt;div class=&quot;card card-with-shadow&quot;&gt;<br />
+          &lt;div class=&quot;card-text&quot;&gt;<br />
+            &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
+            &lt;p&gt;<br />
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+              Natus consequuntur placeat quibusdam reiciendis dolorem<br />
+              eaque ipsum ducimus.<br />
+            &lt;/p&gt;<br />
+          &lt;/div&gt;<br />
+        &lt;/div&gt;
+          </code>
                 </pre>
               </article>
             </li>
@@ -787,18 +736,18 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                 <code class="html">
-                &lt;div class=&quot;card horizontal-card&quot;&gt;<br />
-                  &lt;div class=&quot;card-text&quot;&gt;<br />
-                    &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
-                    &lt;p&gt;<br />
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
-                      Natus consequuntur placeat quibusdam reiciendis dolorem<br />
-                      eaque ipsum ducimus.<br />
-                    &lt;/p&gt;<br />
-                  &lt;/div&gt;<br />
-                &lt;/div&gt;
-                 </code>
+        <code class="html">
+      &lt;div class=&quot;card horizontal-card&quot;&gt;<br />
+        &lt;div class=&quot;card-text&quot;&gt;<br />
+          &lt;h3&gt;kunal tijare&lt;/h3&gt;<br />
+          &lt;p&gt;<br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+            Natus consequuntur placeat quibusdam reiciendis dolorem<br />
+            eaque ipsum ducimus.<br />
+          &lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+      &lt;/div&gt;
+        </code>
                </pre>
               </article>
             </li>
@@ -815,14 +764,14 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                 <code class="html">
-                &lt;img<br />
-                  class=&quot;image-responsive&quot;<br />
-                  class=&quot;avatar&quot;<br />
-                  src=&quot;https://images.unsplash.com/photo-1495001258031-d1b407bc1776?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBxdW90ZXN8ZW58MHx8MHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60&quot;<br />
-                  alt=&quot;Avatar&quot;<br />
-                /&gt;
-                 </code>
+        <code class="html">
+      &lt;img<br />
+        class=&quot;image-responsive&quot;<br />
+        class=&quot;avatar&quot;<br />
+        src=&quot;https://images.unsplash.com/photo-1495001258031-d1b407bc1776?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBxdW90ZXN8ZW58MHx8MHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60&quot;<br />
+        alt=&quot;Avatar&quot;<br />
+      /&gt;
+        </code>
                </pre>
               </article>
             </li>
@@ -839,14 +788,14 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;img<br />
-                  class=&quot;round-image&quot;<br />
-                  class=&quot;avatar&quot;<br />
-                  src=&quot;https://images.unsplash.com/photo-1495001258031-d1b407bc1776?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBxdW90ZXN8ZW58MHx8MHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60&quot;<br />
-                  alt=&quot;Avatar&quot;<br />
-                /&gt;
-                  </code>
+        <code class="html">
+      &lt;img<br />
+        class=&quot;round-image&quot;<br />
+        class=&quot;avatar&quot;<br />
+        src=&quot;https://images.unsplash.com/photo-1495001258031-d1b407bc1776?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBxdW90ZXN8ZW58MHx8MHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60&quot;<br />
+        alt=&quot;Avatar&quot;<br />
+      /&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -855,86 +804,121 @@
               <h2 class="component-name">Input</h2>
               <article class="component component-list component-center">
                 <h3>.input</h3>
-                <input
-                  class="input"
-                  type="text"
-                  name="username"
-                  placeholder="input"
-                />
+                <div class="input-group">
+                  <label class="input-label" for="input-sm">Email</label>
+                  <input
+                    class="input input-sm"
+                    type="email"
+                    id="input-sm"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+
                 <h3>.input-md</h3>
-                <input
-                  class="input input-md"
-                  type="text"
-                  name="username"
-                  placeholder="input input-md"
-                />
+                <div class="input-group">
+                  <label class="input-label" for="input-md">Name</label>
+                  <input
+                    class="input input-md"
+                    type="text"
+                    id="input-md"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
                 <h3>.input-lg</h3>
-                <input
-                  class="input input-lg"
-                  type="text"
-                  name="username"
-                  placeholder="input input-lg"
-                />
+                <div class="input-group">
+                  <label class="input-label" for="input-lg">Username</label>
+                  <input
+                    class="input input-lg"
+                    type="text"
+                    id="input-lg"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
               </article>
               <article class="component component-list component-center">
                 <pre>
-                 <code class="html">
-                &lt;input<br />
-                  class=&quot;input&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input&quot;<br />
-                /&gt;<br />
-                &lt;h3&gt;.input-md&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input input-md&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input input-md&quot;<br />
-                /&gt;<br />
-                &lt;h3&gt;.input-lg&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input input-lg&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input input-lg&quot;<br />
-                /&gt;
-                 </code>
+        <code class="html">
+      &lt;div class=&quot;input-group&quot;&gt;<br />
+        &lt;label class=&quot;input-label&quot; for=&quot;input-sm&quot;&gt;Email&lt;/label&gt;<br />
+        &lt;input<br />
+          class=&quot;input input-sm&quot;<br />
+          type=&quot;email&quot;<br />
+          id=&quot;input-sm&quot;<br />
+          placeholder=&quot;Email&quot;<br />
+          required<br />
+        /&gt;<br />
+      &lt;/div&gt;<br/>
+      &lt;div class=&quot;input-group&quot;&gt;<br />
+        &lt;label class=&quot;input-label&quot; for=&quot;input-md&quot;&gt;Email&lt;/label&gt;<br />
+        &lt;input<br />
+          class=&quot;input input-md&quot;<br />
+          type=&quot;email&quot;<br />
+          id=&quot;input-md&quot;<br />
+          placeholder=&quot;Email&quot;<br />
+          required<br />
+        /&gt;<br />
+      &lt;/div&gt;<br />
+      &lt;div class=&quot;input-group&quot;&gt;<br />
+        &lt;label class=&quot;input-label&quot; for=&quot;input-lg&quot;&gt;Email&lt;/label&gt;<br />
+        &lt;input<br />
+          class=&quot;input input-lg&quot;<br />
+          type=&quot;email&quot;<br />
+          id=&quot;input-lg&quot;<br />
+          placeholder=&quot;Email&quot;<br />
+          required<br />
+        /&gt;<br />
+      &lt;/div&gt;
+        </code>
                </pre>
               </article>
               <article class="component component-list component-center">
                 <h3>.line-input</h3>
-                <input
-                  class="input line-input"
-                  type="password"
-                  name="username"
-                  placeholder="input line-input"
-                />
+                <div class="input-group">
+                  <input
+                    class="input line-input input-sm"
+                    type="text"
+                    id="line-input-sm"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
                 <h3>.line-input input-md</h3>
-                <input
-                  class="input line-input input-md"
-                  type="text"
-                  name="username"
-                  placeholder="input line-input input-md"
-                />
+                <div class="input-group">
+                  <input
+                    class="input line-input input-md"
+                    type="text"
+                    id="line-input-md"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;input<br />
-                  class=&quot;input line-input&quot;<br />
-                  type=&quot;password&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input line-input&quot;<br />
-                /&gt;<br />
-                &lt;h3&gt;.line-input input-md&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input line-input input-md&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input line-input input-md&quot;<br />
-                /&gt;
-                  </code>
+        <code class="html">
+        &lt;div class=&quot;input-group&quot;&gt;<br />
+        &lt;input<br />
+          class=&quot;input line-input input-sm&quot;<br />
+          type=&quot;text&quot;<br />
+          id=&quot;line-input-sm&quot;<br />
+          placeholder=&quot;Name&quot;<br />
+          required<br />
+        /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;h3&gt;.line-input input-md&lt;/h3&gt;<br />
+        &lt;div class=&quot;input-group&quot;&gt;<br />
+        &lt;input<br />
+          class=&quot;input line-input input-md&quot;<br />
+          type=&quot;text&quot;<br />
+          id=&quot;line-input-md&quot;<br />
+          placeholder=&quot;Name&quot;<br />
+          required<br />
+        /&gt;<br />
+      &lt;/div&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -943,67 +927,83 @@
               <h2 class="component-name">Input With Validation</h2>
               <article class="component component-list component-center">
                 <h3>.input</h3>
-                <input
-                  class="input required"
-                  required
-                  type="text"
-                  name="username"
-                  placeholder="input"
-                />
-                <br />
-                <span class="validation-msg-required"
-                  >This field is required</span
-                >
+                <div class="input-group">
+                  <label class="input-label" for="input-valid">Username</label>
+                  <input
+                    class="input input-sm"
+                    type="text"
+                    id="input-valid"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+                <span class="validation-msg-required">Required</span>
                 <h3>.input-md</h3>
-                <input
-                  class="input input-md"
-                  type="text"
-                  name="username"
-                  placeholder="input input-md"
-                />
-                <br />
+                <div class="input-group">
+                  <label class="input-label" for="input-valid-v"
+                    >Password</label
+                  >
+                  <input
+                    class="input input-md"
+                    type="password"
+                    id="input-valid-v"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
                 <span class="validation-msg-ok">Acccepted</span>
                 <h3>.input-lg</h3>
-                <input
-                  class="input input-lg"
-                  type="text"
-                  name="username"
-                  placeholder="input input-lg"
-                />
-                <br />
-                <span class="validation-msg-good">Good</span>
+                <div class="input-group">
+                  <label class="input-label" for="input-lg-v">Username</label>
+                  <input
+                    class="input input-lg"
+                    type="text"
+                    id="input-lg-v"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+                <span class="validation-msg-good">Verified</span>
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;input<br />
-                  class=&quot;input required&quot;<br />
-                  required<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input&quot;<br />
-                /&gt;<br />
-                &lt;br /&gt;<br />
-                &lt;span class=&quot;validation-msg-required&quot;&gt;This field is required&lt;/span&gt;<br />
-                &lt;h3&gt;.input-md&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input input-md&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input input-md&quot;<br />
-                /&gt;<br />
-                &lt;br /&gt;<br />
-                &lt;span class=&quot;validation-msg-ok&quot;&gt;Acccepted&lt;/span&gt;<br />
-                &lt;h3&gt;.input-lg&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input input-lg&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input input-lg&quot;<br />
-                /&gt;<br />
-                &lt;br /&gt;<br />
-                &lt;span class=&quot;validation-msg-good&quot;&gt;Good&lt;/span&gt;
-                  </code>
+        <code class="html">
+      &lt;div class=&quot;input-group&quot;&gt;<br />
+      &lt;label class=&quot;input-label&quot; for=&quot;input-valid&quot;&gt;Username&lt;/label&gt;<br />
+        &lt;input<br />
+          class=&quot;input input-sm&quot;<br />
+          type=&quot;text&quot;<br />
+          id=&quot;input-valid&quot;<br />
+          placeholder=&quot;Username&quot;<br />
+          required<br />
+        /&gt;<br />
+      &lt;/div&gt;<br />
+      &lt;span class=&quot;validation-msg-required&quot;&gt;Required&lt;/span&gt;<br />
+      &lt;h3&gt;.input-md&lt;/h3&gt;<br />
+      &lt;div class=&quot;input-group&quot;&gt;<br />
+        &lt;label class=&quot;input-label&quot; for=&quot;input-valid&quot;&gt;Password&lt;/label&gt;<br />
+        &lt;input<br />
+          class=&quot;input input-md&quot;<br />
+          type=&quot;password&quot;<br />
+          id=&quot;input-valid&quot;<br />
+          placeholder=&quot;Username&quot;<br />
+          required<br />
+        /&gt;<br />
+      &lt;/div&gt;<br />
+      &lt;span class=&quot;validation-msg-ok&quot;&gt;Acccepted&lt;/span&gt;<br />
+      &lt;h3&gt;.input-lg&lt;/h3&gt;<br />
+      &lt;div class=&quot;input-group&quot;&gt;<br />
+        &lt;label class=&quot;input-label&quot; for=&quot;input-lg&quot;&gt;Username&lt;/label&gt;<br />
+        &lt;input<br />
+          class=&quot;input input-lg&quot;<br />
+          type=&quot;text&quot;<br />
+          id=&quot;input-lg&quot;<br />
+          placeholder=&quot;Username&quot;<br />
+          required<br />
+        /&gt;<br />
+      &lt;/div&gt;<br />
+      &lt;span class=&quot;validation-msg-good&quot;&gt;Verified&lt;/span&gt;
+        </code>
                 </pre>
               </article>
               <article class="component component-list component-center">
@@ -1015,9 +1015,7 @@
                   placeholder="input line-input"
                 />
                 <br />
-                <span class="validation-msg-required"
-                  >This field is required</span
-                >
+                <span class="validation-msg-required">Required</span>
                 <h3>.line-input input-md</h3>
                 <input
                   class="input line-input input-md"
@@ -1026,31 +1024,29 @@
                   placeholder="input line-input input-md"
                 />
                 <br />
-                <span class="validation-msg-required"
-                  >This field is required</span
-                >
+                <span class="validation-msg-required">Required</span>
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;input<br />
-                  class=&quot;input line-input&quot;<br />
-                  type=&quot;password&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input line-input&quot;<br />
-                /&gt;<br />
-                &lt;br /&gt;<br />
-                &lt;span class=&quot;validation-msg-required&quot;&gt;This field is required&lt;/span&gt;<br />
-                &lt;h3&gt;.line-input input-md&lt;/h3&gt;<br />
-                &lt;input<br />
-                  class=&quot;input line-input input-md&quot;<br />
-                  type=&quot;text&quot;<br />
-                  name=&quot;username&quot;<br />
-                  placeholder=&quot;input line-input input-md&quot;<br />
-                /&gt;<br />
-                &lt;br /&gt;<br />
-                &lt;span class=&quot;validation-msg-required&quot;&gt;This field is required&lt;/span&gt;
-                  </code>
+        <code class="html">
+      &lt;input<br />
+        class=&quot;input line-input&quot;<br />
+        type=&quot;password&quot;<br />
+        name=&quot;username&quot;<br />
+        placeholder=&quot;input line-input&quot;<br />
+      /&gt;<br />
+      &lt;br /&gt;<br />
+      &lt;span class=&quot;validation-msg-required&quot;&gt;Required&lt;/span&gt;<br />
+      &lt;h3&gt;.line-input input-md&lt;/h3&gt;<br />
+      &lt;input<br />
+        class=&quot;input line-input input-md&quot;<br />
+        type=&quot;text&quot;<br />
+        name=&quot;username&quot;<br />
+        placeholder=&quot;input line-input input-md&quot;<br />
+      /&gt;<br />
+      &lt;br /&gt;<br />
+      &lt;span class=&quot;validation-msg-required&quot;&gt;Required&lt;/span&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -1067,13 +1063,13 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                  &lt;ul class=&quot;inline-list&quot;&gt;<br />
-                    &lt;li class=&quot;inline-list-item&quot;&gt;List Item&lt;/li&gt;<br />
-                    &lt;li class=&quot;inline-list-item&quot;&gt;List Item&lt;/li&gt;<br />
-                    &lt;li class=&quot;inline-list-item&quot;&gt;List Item&lt;/li&gt;<br />
-                  &lt;/ul&gt;
-                  </code>
+        <code class="html">
+        &lt;ul class=&quot;inline-list&quot;&gt;<br />
+          &lt;li class=&quot;inline-list-item&quot;&gt;List Item&lt;/li&gt;<br />
+          &lt;li class=&quot;inline-list-item&quot;&gt;List Item&lt;/li&gt;<br />
+          &lt;li class=&quot;inline-list-item&quot;&gt;List Item&lt;/li&gt;<br />
+        &lt;/ul&gt;
+        </code>
                 </pre>
               </article>
               <article class="component component-list component-center">
@@ -1087,14 +1083,14 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;ul class=&quot;list&quot;&gt;<br />
-                  &lt;li class=&quot;list-item&quot;&gt;List Item&lt;/li&gt;<br />
-                  &lt;li class=&quot;list-item&quot;&gt;List Item&lt;/li&gt;<br />
-                  &lt;li class=&quot;list-item&quot;&gt;List Item&lt;/li&gt;<br />
-                  &lt;li class=&quot;list-item&quot;&gt;List Item&lt;/li&gt;<br />
-                &lt;/ul&gt;
-                  </code>
+        <code class="html">
+      &lt;ul class=&quot;list&quot;&gt;<br />
+        &lt;li class=&quot;list-item&quot;&gt;List Item&lt;/li&gt;<br />
+        &lt;li class=&quot;list-item&quot;&gt;List Item&lt;/li&gt;<br />
+        &lt;li class=&quot;list-item&quot;&gt;List Item&lt;/li&gt;<br />
+        &lt;li class=&quot;list-item&quot;&gt;List Item&lt;/li&gt;<br />
+      &lt;/ul&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -1112,14 +1108,14 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;ul class=&quot;stacked-list&quot;&gt;<br />
-                  &lt;li class=&quot;stacked-list-item&quot;&gt;Youve Got a New Mail&lt;/li&gt;<br />
-                  &lt;li class=&quot;stacked-list-item&quot;&gt;Youve Got a New Mail&lt;/li&gt;<br />
-                  &lt;li class=&quot;stacked-list-item&quot;&gt;Youve Got a New Mail&lt;/li&gt;<br />
-                  &lt;li class=&quot;stacked-list-item&quot;&gt;Youve Got a New Mail&lt;/li&gt;<br />
-                &lt;/ul&gt;
-                  </code>
+        <code class="html">
+      &lt;ul class=&quot;stacked-list&quot;&gt;<br />
+        &lt;li class=&quot;stacked-list-item&quot;&gt;Youve Got a New Mail&lt;/li&gt;<br />
+        &lt;li class=&quot;stacked-list-item&quot;&gt;Youve Got a New Mail&lt;/li&gt;<br />
+        &lt;li class=&quot;stacked-list-item&quot;&gt;Youve Got a New Mail&lt;/li&gt;<br />
+        &lt;li class=&quot;stacked-list-item&quot;&gt;Youve Got a New Mail&lt;/li&gt;<br />
+      &lt;/ul&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -1129,7 +1125,8 @@
                 <h3>.navbar-right</h3>
                 <div class="navbar navbar-right">
                   <div class="nav-brand">
-                    <img src="/Images/steering.svg" width="100%" height="auto" />
+                    <img src="/Images/steering.svg" class="brand-img" />
+                    <span class="nav-brand-heading">Brand-Heading</span>
                   </div>
                   <div class="nav-group">
                     <div class="nav-item">Home</div>
@@ -1141,27 +1138,29 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;div class=&quot;navbar navbar-right&quot;&gt;<br />
-                  &lt;div class=&quot;nav-brand&quot;&gt;<br />
-                    &lt;img src=&quot;/Images/steering.svg&quot; width=&quot;100%&quot; height=&quot;auto&quot; /&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;nav-group&quot;&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;Home&lt;/div&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;About&lt;/div&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;Contact&lt;/div&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;Login&lt;/div&gt;<br />
-                  &lt;/div&gt;<br />
-                &lt;/div&gt;
-                  </code>
+        <code class="html">
+      &lt;div class=&quot;navbar navbar-right&quot;&gt;<br />
+        &lt;div class=&quot;nav-brand&quot;&gt;<br />
+          &lt;img src=&quot;/Images/steering.svg&quot; class=&quot;brand-img&quot; /&gt;<br />
+          &lt;span class=&quot;nav-brand-heading&quot;&gt;Brand-Heading&lt;/span&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;nav-group&quot;&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;Home&lt;/div&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;About&lt;/div&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;Contact&lt;/div&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;Login&lt;/div&gt;<br />
+      &lt;/div&gt;
+        </code>
                 </pre>
               </article>
               <article class="component component-list component-center">
                 <h3>.navbar-center</h3>
                 <div class="navbar navbar-center">
                   <div class="nav-brand">
-                    <img src="/Images/steering.svg" width="100%" height="auto" />
+                    <img src="/Images/steering.svg" class="brand-img" />
+                    <span class="nav-brand-heading">Brand-Heading</span>
                   </div>
+
                   <div class="nav-group">
                     <div class="nav-item">Home</div>
                     <div class="nav-item">About</div>
@@ -1172,27 +1171,29 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;div class=&quot;navbar navbar-center&quot;&gt;<br />
-                  &lt;div class=&quot;nav-brand&quot;&gt;<br />
-                    &lt;img src=&quot;/Images/steering.svg&quot; width=&quot;100%&quot; height=&quot;auto&quot; /&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;nav-group&quot;&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;Home&lt;/div&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;About&lt;/div&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;Contact&lt;/div&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;Login&lt;/div&gt;<br />
-                  &lt;/div&gt;<br />
-                &lt;/div&gt;
-                  </code>
+        <code class="html">
+      &lt;div class=&quot;navbar navbar-center&quot;&gt;<br />
+        &lt;div class=&quot;nav-brand&quot;&gt;<br />
+          &lt;img src=&quot;/Images/steering.svg&quot; class=&quot;brand-img&quot; /&gt;<br />
+          &lt;span class=&quot;nav-brand-heading&quot;&gt;Brand-Heading&lt;/span&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;nav-group&quot;&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;Home&lt;/div&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;About&lt;/div&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;Contact&lt;/div&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;Login&lt;/div&gt;<br />
+      &lt;/div&gt;
+        </code>
                 </pre>
               </article>
               <article class="component component-list component-center">
                 <h3>.navbar-left</h3>
                 <div class="navbar navbar-left">
                   <div class="nav-brand">
-                    <img src="/Images/steering.svg" width="100%" height="auto" />
+                    <img src="/Images/steering.svg" class="brand-img" />
+                    <span class="nav-brand-heading">Brand-Heading</span>
                   </div>
+
                   <div class="nav-group">
                     <div class="nav-item">Home</div>
                     <div class="nav-item">About</div>
@@ -1203,19 +1204,19 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;div class=&quot;navbar navbar-left&quot;&gt;<br />
-                  &lt;div class=&quot;nav-brand&quot;&gt;<br />
-                    &lt;img src=&quot;/Images/steering.svg&quot; width=&quot;100%&quot; height=&quot;auto&quot; /&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;nav-group&quot;&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;Home&lt;/div&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;About&lt;/div&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;Contact&lt;/div&gt;<br />
-                    &lt;div class=&quot;nav-item&quot;&gt;Login&lt;/div&gt;<br />
-                  &lt;/div&gt;<br />
-                &lt;/div&gt;
-                  </code>
+        <code class="html">
+      &lt;div class=&quot;navbar navbar-left&quot;&gt;<br />
+        &lt;div class=&quot;nav-brand&quot;&gt;<br />
+          &lt;img src=&quot;/Images/steering.svg&quot; class=&quot;brand-img&quot; /&gt;<br />
+          &lt;span class=&quot;nav-brand-heading&quot;&gt;Brand-Heading&lt;/span&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;nav-group&quot;&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;Home&lt;/div&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;About&lt;/div&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;Contact&lt;/div&gt;<br />
+          &lt;div class=&quot;nav-item&quot;&gt;Login&lt;/div&gt;<br />
+      &lt;/div&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -1241,24 +1242,23 @@
               </article>
               <article class="component component-list component-center">
                 <pre>
-
-                  <code class="html">
-                &lt;div class=&quot;modal&quot;&gt;<br />
-                  &lt;p&gt;<br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam<br />
-                    esse id ab, soluta provident tempore. Perspiciatis<br />
-                    voluptatum tenetur reiciendis, voluptatibus aliquid eum<br />
-                    adipisci nostrum aut enim temporibus modi non suscipit?<br />
-                  &lt;/p&gt;<br />
-                  &lt;p&gt;<br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam<br />
-                    esse id ab, soluta provident tempore. Perspiciatis<br />
-                    voluptatum tenetur reiciendis, voluptatibus aliquid eum<br />
-                    adipisci nostrum aut enim temporibus modi non suscipit?<br />
-                  &lt;/p&gt;<br />
-                  &lt;button class=&quot;btn modal-btn&quot;&gt;X&lt;/button&gt;<br />
-                &lt;/div&gt;
-                  </code>
+        <code class="html">
+      &lt;div class=&quot;modal&quot;&gt;<br />
+        &lt;p&gt;<br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam<br />
+          esse id ab, soluta provident tempore. Perspiciatis<br />
+          voluptatum tenetur reiciendis, voluptatibus aliquid eum<br />
+          adipisci nostrum aut enim temporibus modi non suscipit?<br />
+        &lt;/p&gt;<br />
+        &lt;p&gt;<br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam<br />
+          esse id ab, soluta provident tempore. Perspiciatis<br />
+          voluptatum tenetur reiciendis, voluptatibus aliquid eum<br />
+          adipisci nostrum aut enim temporibus modi non suscipit?<br />
+        &lt;/p&gt;<br />
+        &lt;button class=&quot;btn modal-btn&quot;&gt;X&lt;/button&gt;<br />
+      &lt;/div&gt;
+        </code>
                 </pre>
               </article>
             </li>
@@ -1266,27 +1266,40 @@
               <h2 class="component-name">Toast</h2>
               <article class="component component-list component-center">
                 <h3>.toast</h3>
-                <div class="toast">
-                  <p>You've Got an Email...!</p>
-                  <button class="btn toast-btn">X</button>
-                </div>
-                <div class="toast toast-n">
-                  <p>You've Got an Email...!</p>
-                  <button class="btn toast-btn">X</button>
+
+                <div class="toast-container">
+                  <div class="toast">
+                    <p>You've Got an Email...!</p>
+                    <button class="btn toast-btn">X</button>
+                  </div>
                 </div>
               </article>
               <article class="component component-list component-center">
                 <pre>
-                  <code class="html">
-                &lt;div class=&quot;toast&quot;&gt;<br />
-                  &lt;p&gt;You've Got an Email...!&lt;/p&gt;<br />
-                  &lt;button class=&quot;btn toast-btn&quot;&gt;X&lt;/button&gt;<br />
-                &lt;/div&gt;<br />
-                &lt;div class=&quot;toast toast-n&quot;&gt;<br />
-                  &lt;p&gt;You've Got an Email...!&lt;/p&gt;<br />
-                  &lt;button class=&quot;btn toast-btn&quot;&gt;X&lt;/button&gt;<br />
-                &lt;/div&gt;
-                  </code>
+        <code class="html">
+      &lt;div class=&quot;toast toast-n&quot;&gt;<br />
+        &lt;p&gt;You've Got an Email...!&lt;/p&gt;<br />
+        &lt;button class=&quot;btn toast-btn&quot;&gt;X&lt;/button&gt;<br />
+      &lt;/div&gt;
+        </code>
+                </pre>
+              </article>
+            </li>
+            <li id="rating">
+              <h2 class="component-name">Rating</h2>
+              <article class="component component-list component-center">
+                <h3>.rating</h3>
+                <span class="rating"
+                  >4.8<i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </article>
+              <article class="component component-list component-center">
+                <pre>
+        <code class="html">
+      &lt;span class=&quot;rating&quot;&gt;<br />
+        4.8&lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br />
+      &lt;/span&gt;
+        </code>
                 </pre>
               </article>
             </li>

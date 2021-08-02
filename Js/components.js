@@ -1,5 +1,3 @@
-// console.log("Connected");
-
 // const alertboxes = document.querySelectorAll(".alert");
 const modal = document.querySelector(".modal");
 const toast = document.querySelector(".toast");
@@ -26,7 +24,7 @@ const closeToast = () => {
   toast.style.display = "none";
 };
 
-const toatBtn = document
+const toastBtn = document
   .querySelector(".toast-btn")
   .addEventListener("click", closeToast);
 
@@ -43,10 +41,4 @@ const alertbuttons = document.querySelectorAll(".alert-btn");
 alertbuttons.forEach((element) => {
   const alertBox = element.parentElement;
   element.addEventListener("click", () => closeAlert(alertBox));
-});
-
-btnCopy.addEventListener("click", () => {
-  const textToCopy = btnCopy.nextElementSibling.innerText;
-  // document.execCommand()
-  console.log(textToCopy);
 });
